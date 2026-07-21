@@ -26,7 +26,16 @@ Black2Africa existed before Build Week. The isolated Route Desk application, GPT
 
 ## Required URLs
 
-- Live app: pending Sites deployment
+- Live app: `https://blackwards-route-desk.indigo-iris-5804.chatgpt.site`
 - Repository: `https://github.com/thefayth/blackwards-route-desk`
+- Pitch: `https://www.canva.com/d/BMzV-4CeUqTEzKD`
 - YouTube demo: pending upload
 - Primary Codex Session ID: pending `/feedback`
+
+## Submission Checklist
+
+- Category: Work and Productivity
+- Existing-project disclosure: Black2Africa predates Build Week; this isolated app and its GPT-5.6 route were newly built during the submission period.
+- AI disclosure: Codex implemented, tested, deployed, documented, recorded, and packaged the app under Faith Cheltenham's product direction. GPT-5.6 performs structured route reading.
+- Privacy disclosure: no account, upload, prompt retention, or Black2Africa data connection; D1 contains metadata hashes and counters only.
+- Final owner action: review the irreversible Devpost confirmation and submit.

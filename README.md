@@ -13,7 +13,7 @@ Built for the **Work and Productivity** track of OpenAI Build Week 2026.
 3. Enter a public-safe summary and terms to request a live GPT-5.6 packet.
 4. Copy or download the result as Markdown.
 
-Live URL: added to this README immediately after the public Sites deployment.
+Live URL: [blackwards-route-desk.indigo-iris-5804.chatgpt.site](https://blackwards-route-desk.indigo-iris-5804.chatgpt.site)
 
 ## What Is New For Build Week
 
@@ -81,9 +81,22 @@ Create a local `.env` from `.env.example` only when testing live generation. Nev
 npm run lint
 npm test
 npm run build
+npm run test:browser
+npm run test:live
 ```
 
 The test suite covers validation, private-data rejection, prompt-injection containment, sample packet schemas, Markdown export, server rendering, health state, and the missing-service fallback. Browser QA covers phone, tablet, and desktop widths plus sample interaction and document overflow.
+
+## Contest Package
+
+- [Public app](https://blackwards-route-desk.indigo-iris-5804.chatgpt.site)
+- [Public source repository](https://github.com/thefayth/blackwards-route-desk)
+- [Editable final Canva pitch](https://www.canva.com/d/60fpTBXLJ_Y3Vbs)
+- Production screenshots: `qa-screenshots/`
+- Reproducible deck and demo scripts: `scripts/`
+- Demo narration, submission copy, and launch receipt: `docs/`
+
+The final narrated demo, caption file, thumbnail, and both pitch candidates are packaged as release artifacts. They are not bundled into the application runtime.
 
 ## Codex Collaboration
 

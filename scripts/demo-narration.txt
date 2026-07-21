@@ -1,0 +1,17 @@
+Black creators are often asked to move fast while the terms doing the most work stay vague. Who owns the result? Where does credit appear? What is the compensation? And does a partner gain access to the creator's audience?
+
+Auntie AI: Blackwards Route Desk reads the route before the work moves. It is a new, isolated Work and Productivity app built for OpenAI Build Week.
+
+There is no account and no upload. A creator chooses opportunity, partnership, funding, or publishing, then describes only the visible, public-safe terms. Compensation, rights, credit, audience access, and urgency become part of the route instead of small print around it.
+
+This synthetic exhibition case asks for permanent exclusive rights, offers no clear fee, shares credit, and requests an audience export. The packet says Protect. It explains what should stay owned, names the extraction signals, supplies questions to ask before yes, and gives one action for the next twenty-four hours: reply with a narrow, nonexclusive license proposal and a named fee before sending files.
+
+The packet can be copied or downloaded as Markdown, so the creator leaves with an owned record instead of a disappearing chat.
+
+Three clearly labeled synthetic cases remain available without spending a model run. Live routes use the OpenAI Responses API with GPT-5.6, medium reasoning, strict structured output, no tools, and store set to false.
+
+The privacy guard rejects likely contact details, credentials, private keys, HTML, and oversized text before generation. D1 stores only salted actor hashes, input hashes, model status, latency, timestamps, and counters. It never stores the creator's summary or route packet.
+
+Faith Cheltenham set the product direction and the Blackwards frame: read backward from ownership, attribution, and leverage. Codex isolated the contest app from production Black2Africa, implemented and tested the full route, deployed it to OpenAI Sites, and built the evidence trail.
+
+The result is a small decision desk with a larger operating rule: ownership before movement.

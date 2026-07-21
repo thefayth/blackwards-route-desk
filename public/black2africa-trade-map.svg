@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+  <title id="title">Black2Africa trade-route atlas</title>
+  <desc id="desc">An abstract trade-route atlas connecting diaspora and African market nodes through reviewed partnership paths.</desc>
+  <defs>
+    <linearGradient id="mapField" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#020403"/>
+      <stop offset=".6" stop-color="#06130f"/>
+      <stop offset="1" stop-color="#123228"/>
+    </linearGradient>
+    <pattern id="mapGrid" width="45" height="45" patternUnits="userSpaceOnUse">
+      <path d="M45 0H0v45" fill="none" stroke="#fff7e8" stroke-opacity=".07"/>
+    </pattern>
+    <filter id="mapGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+  <rect width="900" height="520" rx="26" fill="url(#mapField)"/>
+  <rect width="900" height="520" rx="26" fill="url(#mapGrid)"/>
+  <g fill="#fff7e8" opacity=".12">
+    <path d="M88 178c76-42 159-51 249-27 72 19 120 8 161-22 56-40 116-47 190-17 39 16 72 40 100 72-63 12-115 10-157-8-60-26-112-16-160 29-54 51-120 63-199 37-77-26-138-18-184 24-41-33-40-62 0-88Z"/>
+    <path d="M538 276c54-36 113-46 177-31 57 13 99 43 126 89-53 40-118 53-196 39-67-12-114-44-141-97 11 2 22 2 34 0Z"/>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <path d="M98 305c108-74 212-99 312-76 93 21 134 86 220 80 58-4 106-32 167-82" stroke="#f2b632" stroke-width="7"/>
+    <path d="M105 347c120-58 227-70 322-36 88 32 142 82 256 48" stroke="#168a5a" stroke-width="9" opacity=".86"/>
+    <path d="M151 251c99-28 189-22 270 18 73 36 143 45 211 27" stroke="#d9412d" stroke-width="4" stroke-dasharray="5 14"/>
+  </g>
+  <g>
+    <circle cx="120" cy="304" r="24" fill="#f2b632" filter="url(#mapGlow)" opacity=".5"/>
+    <circle cx="120" cy="304" r="10" fill="#f2b632"/>
+    <circle cx="434" cy="230" r="21" fill="#168a5a" filter="url(#mapGlow)" opacity=".45"/>
+    <circle cx="434" cy="230" r="10" fill="#168a5a"/>
+    <circle cx="631" cy="310" r="22" fill="#168a5a" filter="url(#mapGlow)" opacity=".45"/>
+    <circle cx="631" cy="310" r="10" fill="#168a5a"/>
+    <circle cx="797" cy="227" r="24" fill="#d9412d" filter="url(#mapGlow)" opacity=".55"/>
+    <circle cx="797" cy="227" r="10" fill="#d9412d"/>
+  </g>
+  <g transform="translate(676 60)">
+    <rect width="154" height="86" rx="7" fill="none" stroke="#f2b632" stroke-width="3"/>
+    <path d="M20 28h112M20 52h82" stroke="#f2b632" stroke-width="9" stroke-linecap="round"/>
+  </g>
+  <path d="M78 430h742" stroke="#fff7e8" stroke-opacity=".15" stroke-width="2"/>
+</svg>

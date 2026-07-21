@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Auntie AI protected packet mark</title>
+  <desc id="desc">A dark protected packet mark with warm paper, review shield, and owner-controlled route nodes.</desc>
+  <defs>
+    <linearGradient id="field" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#020403"/>
+      <stop offset=".58" stop-color="#06140f"/>
+      <stop offset="1" stop-color="#123228"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff7e8"/>
+      <stop offset=".64" stop-color="#f3ead8"/>
+      <stop offset="1" stop-color="#e4c98a"/>
+    </linearGradient>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
+      <path d="M38 0H0v38" fill="none" stroke="#fff7e8" stroke-opacity=".075"/>
+    </pattern>
+  </defs>
+  <rect width="512" height="512" fill="#050706"/>
+  <rect width="512" height="512" rx="92" fill="url(#field)"/>
+  <rect width="512" height="512" rx="92" fill="url(#grid)"/>
+  <circle cx="402" cy="116" r="96" fill="#d9412d" opacity=".18"/>
+  <circle cx="105" cy="408" r="116" fill="#168a5a" opacity=".16"/>
+  <path d="M82 338c61-89 135-133 222-133 50 0 92 13 127 40" fill="none" stroke="#168a5a" stroke-width="16" stroke-linecap="round" opacity=".54"/>
+  <g>
+    <rect x="139" y="96" width="250" height="318" rx="34" fill="#000" opacity=".22"/>
+    <rect x="116" y="74" width="250" height="318" rx="34" fill="url(#paper)"/>
+    <path d="M116 124c0-28 22-50 50-50h75l29 45h96v69H116Z" fill="#168a5a"/>
+    <path d="M162 222h121M162 258h159M162 294h96" stroke="#05241c" stroke-width="11" stroke-linecap="round"/>
+    <path d="M162 342h68" stroke="#d9412d" stroke-width="13" stroke-linecap="round"/>
+    <path d="M116 188h250" stroke="#05241c" stroke-opacity=".13" stroke-width="2"/>
+  </g>
+  <g>
+    <path d="M258 226c42 0 73 17 73 17v55c0 48-26 78-73 100-46-22-72-52-72-100v-55s31-17 72-17Z" fill="#05241c"/>
+    <path d="M258 251c27 0 48 10 48 10v37c0 30-17 50-48 65-31-15-47-35-47-65v-37s20-10 47-10Z" fill="#fff7e8"/>
+    <path d="M226 339l32-74 32 74M241 310h34" fill="none" stroke="#d9412d" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M258 265v-33m0 0h-36m36 0h36" fill="none" stroke="#168a5a" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <path d="M164 430h184" stroke="#f2b632" stroke-width="18" stroke-linecap="round"/>
+</svg>

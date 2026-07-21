@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-labelledby="title desc">
+  <title id="title">Black2Africa route desk</title>
+  <desc id="desc">An editorial route desk graphic with reviewed opportunity cards, a network screen, and protected handoff nodes.</desc>
+  <defs>
+    <linearGradient id="deskPaper" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff7e8"/>
+      <stop offset=".62" stop-color="#eee6d5"/>
+      <stop offset="1" stop-color="#d9eadb"/>
+    </linearGradient>
+    <linearGradient id="deskScreen" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#020403"/>
+      <stop offset=".62" stop-color="#061b14"/>
+      <stop offset="1" stop-color="#0f5a3b"/>
+    </linearGradient>
+    <pattern id="deskGrid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0v44" fill="none" stroke="#05241c" stroke-opacity=".09"/>
+    </pattern>
+  </defs>
+  <rect width="960" height="640" rx="28" fill="url(#deskPaper)"/>
+  <rect width="960" height="640" rx="28" fill="url(#deskGrid)"/>
+  <circle cx="790" cy="108" r="138" fill="#d9412d" opacity=".12"/>
+  <circle cx="156" cy="526" r="176" fill="#168a5a" opacity=".14"/>
+  <path d="M108 456c126-126 246-181 360-164 142 21 242-34 326-150" fill="none" stroke="#f2b632" stroke-width="12" stroke-linecap="round" opacity=".62"/>
+  <path d="M124 502c138-73 265-102 381-87 133 17 248-21 345-112" fill="none" stroke="#168a5a" stroke-width="16" stroke-linecap="round" opacity=".76"/>
+  <g transform="translate(286 106)">
+    <rect width="440" height="306" rx="24" fill="url(#deskScreen)"/>
+    <rect x="28" y="28" width="384" height="250" rx="15" fill="#030c09" stroke="#f2b632" stroke-opacity=".22"/>
+    <path d="M62 76h92m24 0h56m28 0h88" stroke="#fff7e8" stroke-width="8" stroke-linecap="round" opacity=".82"/>
+    <path d="M62 132h276M62 174h312M62 216h204" stroke="#168a5a" stroke-width="10" stroke-linecap="round" opacity=".82"/>
+    <circle cx="342" cy="214" r="38" fill="#d9412d"/>
+    <path d="M324 214h36m-18-18v36" stroke="#030c09" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(104 132)">
+    <rect width="176" height="220" rx="20" fill="#fff7e8" stroke="#06140f" stroke-opacity=".16"/>
+    <path d="M34 48h96M34 88h114M34 128h76" stroke="#05241c" stroke-width="9" stroke-linecap="round"/>
+    <path d="M34 170h62" stroke="#d9412d" stroke-width="11" stroke-linecap="round"/>
+    <circle cx="132" cy="168" r="25" fill="#168a5a"/>
+  </g>
+  <g transform="translate(646 394)">
+    <rect width="216" height="136" rx="22" fill="#fff7e8" stroke="#06140f" stroke-opacity=".16"/>
+    <path d="M36 44h136M36 82h98" stroke="#05241c" stroke-width="10" stroke-linecap="round"/>
+    <path d="M168 34c-24 36-22 69 8 98-51-8-84-31-101-68 31-2 62-12 93-30Z" fill="#168a5a"/>
+  </g>
+  <g fill="#050706">
+    <circle cx="124" cy="502" r="9"/>
+    <circle cx="505" cy="415" r="9"/>
+    <circle cx="850" cy="303" r="9"/>
+  </g>
+</svg>

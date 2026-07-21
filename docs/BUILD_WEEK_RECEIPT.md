@@ -1,6 +1,6 @@
 # Build Week Launch Receipt
 
-Status: public sample-ready deployment verified. Live GPT-5.6 activation awaits one masked Sites credential entry.
+Status: public deployment and live GPT-5.6 route verified.
 
 ## Product Boundary
 
@@ -11,16 +11,16 @@ Status: public sample-ready deployment verified. Live GPT-5.6 activation awaits 
 ## Deployment Evidence
 
 - Public repository: `https://github.com/thefayth/blackwards-route-desk`
-- Source commit deployed: `e111863be51d0065131eb47dce2224619664614e`
+- Source commit deployed: `4764f4dc41f9400711d5208df5a292d3f7b1e390`
 - Sites project: `appgprj_6a5ee785d7f481919c491f05f56daa5a`
-- Sites version: `2` (`appgprj_6a5ee785d7f481919c491f05f56daa5a~appgver_bccbc3cbb7488191a5fdc8a82bbf9838`)
-- Deployment: `appgdep_6a5f335505cc8191acdaaeefb7a7d360`, status `succeeded`
+- Sites version: `5` (`appgprj_6a5ee785d7f481919c491f05f56daa5a~appgver_52f75366c55c819195b156148279c1b6`)
+- Deployment: `appgdep_6a5f40a5240c8191866227bf2f04b04c`, status `succeeded`
 - Public URL: `https://blackwards-route-desk.indigo-iris-5804.chatgpt.site`
-- Sites archive: `sha256:86af6de1776afec358c36302d9bdfbc451a5674178f69b1d6d9fecf7ef387ad5`, 31 files, 4,085,760 bytes
-- Local package: `work/blackwards-route-desk-v2.tar.gz`, SHA-256 `93AF6E799ACD4EAB7720CA003FEC059838C3D98B32439977FA97A7E1111226B0`, 2,712,229 bytes
-- Previous rollback: Sites version `1`, deployment `appgdep_6a5eea7701a88191a4888e52d556aa12`
+- Sites archive: `sha256:5339b1239e8fceabdf293ec3a712db974c19eba5ca30dc5ab6bc6f08eebb49db`, 31 files, 4,085,760 bytes
+- Local package: `work/blackwards-route-desk-v5.tar.gz`, SHA-256 `A0CF7F586F96A1347448D3E345B0656508DE91D8F0385BD203AC03744536B7A6`, 2,712,435 bytes
+- Previous rollback: Sites version `4` (`appgprj_6a5ee785d7f481919c491f05f56daa5a~appgver_5c03d98ff6bc81918a70435c8a1ffd66`), deployment `appgdep_6a5f4006ed38819184379cdedf5f154c`
 - D1 binding: `DB`; migration: `drizzle/0000_sticky_argent.sql`
-- Runtime environment names: `OPENAI_MODEL`, `RATE_LIMIT_SALT`, `OPENAI_API_KEY`. Values are excluded from source and receipts.
+- Runtime environment revision: `2`; names: `OPENAI_MODEL`, `RATE_LIMIT_SALT`, `OPENAI_API_KEY`. Secret values are excluded from source and receipts.
 
 ## Verification Evidence
 
@@ -30,14 +30,17 @@ Status: public sample-ready deployment verified. Live GPT-5.6 activation awaits 
 - `npm run test:browser`: 9 tests pass across 390x844, 768x1024, and 1440x1000
 - `npm run test:live`: the same 9 tests pass against the anonymous public deployment
 - Public app and `/api/health`: HTTP `200`
-- Health response: metadata-only retention, model `gpt-5.6`, `liveReady: false`
+- Health response: metadata-only retention, model `gpt-5.6`, `liveReady: true`
+- Live GPT proof: HTTP `200`, `source: live`, `model: gpt-5.6`, verdict `clarify`, route ID `d4dc1ab1-904c-400b-b32e-d80997470899`
+- Live response SHA-256: `4a04df971c57b53742797b685f741cf3d8d6069dfe816506cddce73ae403c826`; no prompt or response content was written to the receipt
+- Live QA quota after proof: one actor attempt remained for the UTC day; the five-attempt allowance resets daily and samples remain unlimited
 - Live sample, export, privacy rejection, keyboard-reachable controls, and horizontal overflow are covered by Playwright
 - Production dependency audit: no high or critical advisory; two moderate advisories remain in Next's nested PostCSS dependency pending an upstream-safe update
 - Social card: `public/og.png`, SHA-256 `D29DFE9345C099447805E85815DF8140E791E2ECD6D052D9CAD609184BFAB42B`
 - Production screenshots:
   - desktop: SHA-256 `5A36240B0DC8D4C388A11FC37A9B9EBC18E45CAEAD87877D556D55297D1F7FF7`
   - tablet: SHA-256 `FBCA0AAE9F913FD278FDFBA43B1803054C80D6397B0F1F1754F6D8F30AF85CBF`
-  - phone: SHA-256 `2C5986B4EF18A64504145C81A88EC0F50BB07A813F3F8186F902E7B3CB3491B2`
+  - phone: SHA-256 `76633CAB8BFB5F1987A17972ACFFCF63CB9AF82690A6F5447245DB53C6840D88`
 
 ## Presentation Evidence
 
@@ -61,7 +64,6 @@ Status: public sample-ready deployment verified. Live GPT-5.6 activation awaits 
 
 ## Remaining Account-Bound Evidence
 
-- One hashed production GPT-5.6 response after `OPENAI_API_KEY` is entered through the masked Sites environment control
 - Public YouTube URL after account-owner OAuth or 2FA
 - Devpost project URL, final submission timestamp, and primary Codex `/feedback` Session ID
 

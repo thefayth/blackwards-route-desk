@@ -22,6 +22,8 @@ The product does not approve contracts or provide legal advice. It makes the hid
 
 The live app uses the OpenAI Responses API with GPT-5.6, medium reasoning, strict JSON-schema output, no tools, `store: false`, and a second server-side schema check. A D1 ledger enforces small public quotas while storing only salted actor hashes, input hashes, model status, latency, timestamps, and counters. Creator summaries and generated packets are not persisted. Three synthetic packets remain available when live generation is unavailable.
 
+Production proof on July 21, 2026 returned a complete HTTP 200 packet with `source: live`, `model: gpt-5.6`, and a metadata-only response hash. Public browser QA passed on phone, tablet, and desktop without horizontal overflow.
+
 Black2Africa existed before Build Week. The isolated Route Desk application, GPT-5.6 workflow, privacy guard, D1 ledger, synthetic cases, responsive interface, tests, social card, demo, and evidence package were newly built during the submission period with Codex.
 
 ## Required URLs

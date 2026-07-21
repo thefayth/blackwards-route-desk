@@ -37,7 +37,7 @@ The existing WordPress platform at [black2africa.xyz](https://black2africa.xyz) 
 - strict JSON-schema output;
 - `store: false`;
 - no tools or web access;
-- a 900-token output limit.
+- a 1,800-token completion envelope and a contained 75-second server timeout.
 
 The submitted summary is delimited as untrusted quoted material. Model output must pass a second server-side schema check before it is returned.
 
@@ -83,6 +83,7 @@ npm test
 npm run build
 npm run test:browser
 npm run test:live
+npm run test:gpt-live
 ```
 
 The test suite covers validation, private-data rejection, prompt-injection containment, sample packet schemas, Markdown export, server rendering, health state, and the missing-service fallback. Browser QA covers phone, tablet, and desktop widths plus sample interaction and document overflow.

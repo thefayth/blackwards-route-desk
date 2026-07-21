@@ -161,13 +161,27 @@ export async function POST(request: Request) {
     }
 
     const responsePayload = (await openAIResponse.json()) as Record<string, unknown>;
+    const responseModel = String(responsePayload.model || requestedModel);
+    if (responseModel !== requestedModel && !responseModel.startsWith(`${requestedModel}-`)) {
+      await recordReceipt(runtime.DB, {
+        routeId: requestId,
+        day: quota.day,
+        actorHash,
+        inputHash,
+        model: responseModel,
+        status: "model_mismatch",
+        latencyMs: Date.now() - startedAt,
+      });
+      return jsonError("model_mismatch", "The route did not run on the expected GPT-5.6 model. Nothing was saved; open a verified sample.", 502);
+    }
+
     if (responsePayload.status === "incomplete") {
       await recordReceipt(runtime.DB, {
         routeId: requestId,
         day: quota.day,
         actorHash,
         inputHash,
-        model: String(responsePayload.model || requestedModel),
+        model: responseModel,
         status: "model_incomplete",
         latencyMs: Date.now() - startedAt,
       });
@@ -188,7 +202,7 @@ export async function POST(request: Request) {
         day: quota.day,
         actorHash,
         inputHash,
-        model: String(responsePayload.model || requestedModel),
+        model: responseModel,
         status: "invalid_model_output",
         latencyMs: Date.now() - startedAt,
       });
@@ -199,7 +213,7 @@ export async function POST(request: Request) {
       ...modelPacket,
       routeId: requestId,
       generatedAt: new Date().toISOString(),
-      model: String(responsePayload.model || requestedModel),
+      model: requestedModel,
       source: "live",
       quota: {
         actorRemaining: quota.actorRemaining,

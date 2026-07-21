@@ -26,6 +26,7 @@ type QuotaClaim = {
 const ACTOR_LIMIT = 5;
 const GLOBAL_LIMIT = 100;
 const MODEL_OUTPUT_BUDGET = 1800;
+const MODEL_TIMEOUT_MS = 75_000;
 
 const outputSchema = {
   type: "object",
@@ -116,7 +117,7 @@ export async function POST(request: Request) {
   }
 
   const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 30_000);
+  const timeout = setTimeout(() => controller.abort(), MODEL_TIMEOUT_MS);
   const requestedModel = runtime.OPENAI_MODEL || "gpt-5.6";
 
   try {
@@ -228,7 +229,10 @@ export async function POST(request: Request) {
       status,
       latencyMs: Date.now() - startedAt,
     });
-    return jsonError("model_unavailable", "The live model timed out. No summary was stored; try again or open a verified sample.", 504);
+    const message = status === "timeout"
+      ? "The live model timed out. No summary was stored; try again or open a verified sample."
+      : "The live model request failed. No summary was stored; try again or open a verified sample.";
+    return jsonError("model_unavailable", message, 504);
   } finally {
     clearTimeout(timeout);
   }

@@ -11,13 +11,14 @@ Status: public sample-ready deployment verified. Live GPT-5.6 activation awaits 
 ## Deployment Evidence
 
 - Public repository: `https://github.com/thefayth/blackwards-route-desk`
-- Source commit deployed: `72eb9d16b669ad399a2a67f00ac6ba2020f5020e`
+- Source commit deployed: `e111863be51d0065131eb47dce2224619664614e`
 - Sites project: `appgprj_6a5ee785d7f481919c491f05f56daa5a`
-- Sites version: `1` (`appgprj_6a5ee785d7f481919c491f05f56daa5a~appgver_6608c5d0577c819187a9d824ff9a3cdb`)
-- Deployment: `appgdep_6a5eea7701a88191a4888e52d556aa12`, status `succeeded`
+- Sites version: `2` (`appgprj_6a5ee785d7f481919c491f05f56daa5a~appgver_bccbc3cbb7488191a5fdc8a82bbf9838`)
+- Deployment: `appgdep_6a5f335505cc8191acdaaeefb7a7d360`, status `succeeded`
 - Public URL: `https://blackwards-route-desk.indigo-iris-5804.chatgpt.site`
-- Sites archive: `sha256:ec6c28883f29310c7ba40f16df4348715066228aed2d282defccb0f7f356604f`, 31 files, 4,085,760 bytes
-- Local package: `work/blackwards-route-desk-v1.tar.gz`, SHA-256 `125127CD09500872D9D0767BE48D9A66A0FF3A3D7E713163484E07A52530F773`, 2,712,101 bytes
+- Sites archive: `sha256:86af6de1776afec358c36302d9bdfbc451a5674178f69b1d6d9fecf7ef387ad5`, 31 files, 4,085,760 bytes
+- Local package: `work/blackwards-route-desk-v2.tar.gz`, SHA-256 `93AF6E799ACD4EAB7720CA003FEC059838C3D98B32439977FA97A7E1111226B0`, 2,712,229 bytes
+- Previous rollback: Sites version `1`, deployment `appgdep_6a5eea7701a88191a4888e52d556aa12`
 - D1 binding: `DB`; migration: `drizzle/0000_sticky_argent.sql`
 - Runtime environment names: `OPENAI_MODEL`, `RATE_LIMIT_SALT`, `OPENAI_API_KEY`. Values are excluded from source and receipts.
 
@@ -27,6 +28,7 @@ Status: public sample-ready deployment verified. Live GPT-5.6 activation awaits 
 - `npx tsc --noEmit`: pass
 - `npm test`: 5 unit and 3 rendered-runtime tests pass
 - `npm run test:browser`: 9 tests pass across 390x844, 768x1024, and 1440x1000
+- `npm run test:live`: the same 9 tests pass against the anonymous public deployment
 - Public app and `/api/health`: HTTP `200`
 - Health response: metadata-only retention, model `gpt-5.6`, `liveReady: false`
 - Live sample, export, privacy rejection, keyboard-reachable controls, and horizontal overflow are covered by Playwright

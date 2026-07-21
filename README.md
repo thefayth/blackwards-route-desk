@@ -92,6 +92,7 @@ The test suite covers validation, private-data rejection, prompt-injection conta
 - [Public app](https://blackwards-route-desk.indigo-iris-5804.chatgpt.site)
 - [Public source repository](https://github.com/thefayth/blackwards-route-desk)
 - [Editable final Canva pitch](https://www.canva.com/d/60fpTBXLJ_Y3Vbs)
+- [Public media release](https://github.com/thefayth/blackwards-route-desk/releases/tag/build-week-v1.0.0)
 - Production screenshots: `qa-screenshots/`
 - Reproducible deck and demo scripts: `scripts/`
 - Demo narration, submission copy, and launch receipt: `docs/`

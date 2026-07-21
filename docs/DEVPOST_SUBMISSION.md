@@ -29,6 +29,7 @@ Black2Africa existed before Build Week. The isolated Route Desk application, GPT
 - Live app: `https://blackwards-route-desk.indigo-iris-5804.chatgpt.site`
 - Repository: `https://github.com/thefayth/blackwards-route-desk`
 - Pitch: `https://www.canva.com/d/BMzV-4CeUqTEzKD`
+- Downloadable demo package: `https://github.com/thefayth/blackwards-route-desk/releases/tag/build-week-v1.0.0`
 - YouTube demo: pending upload
 - Primary Codex Session ID: pending `/feedback`
 

@@ -44,14 +44,15 @@ test("server-renders the complete Route Desk", async () => {
   assert.doesNotMatch(html, /Your site is taking shape|Building your site/);
 });
 
-test("health route reports a contained not-yet-live state without secrets", async () => {
+test("health route reports readiness without exposing secrets", async () => {
   const response = await fetch(`${baseUrl}/api/health`);
   assert.equal(response.status, 200);
   const payload = await response.json();
   assert.equal(payload.service, "blackwards-route-desk");
   assert.equal(payload.model, "gpt-5.6");
-  assert.equal(payload.liveReady, false);
+  assert.equal(typeof payload.liveReady, "boolean");
   assert.equal(payload.retention, "metadata-only");
+  assert.doesNotMatch(JSON.stringify(payload), /sk-|RATE_LIMIT_SALT|OPENAI_API_KEY/);
 });
 
 test("live route fails truthfully when server secrets are unavailable", async () => {

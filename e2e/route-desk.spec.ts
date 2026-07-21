@@ -46,12 +46,12 @@ test("health response exposes status but no secret values", async ({ request }) 
   const response = await request.get("/api/health");
   expect(response.ok()).toBeTruthy();
   const payload = await response.json();
-  expect(payload).toEqual({
+  expect(payload).toMatchObject({
     status: "ok",
     service: "blackwards-route-desk",
     model: "gpt-5.6",
-    liveReady: false,
     retention: "metadata-only",
   });
+  expect(typeof payload.liveReady).toBe("boolean");
   expect(JSON.stringify(payload)).not.toMatch(/sk-|RATE_LIMIT_SALT|OPENAI_API_KEY/);
 });

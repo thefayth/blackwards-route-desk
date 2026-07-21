@@ -54,6 +54,8 @@ Status: public deployment and live GPT-5.6 route verified.
 
 ## Demo Evidence
 
+- Public release: `https://github.com/thefayth/blackwards-route-desk/releases/tag/build-week-v1.0.0`; published, not draft or prerelease
+- Release assets: five uploaded files with GitHub SHA-256 digests matching the local demo, captions, thumbnail, and both pitch candidates
 - Final demo: `work/demo/blackwards-route-desk-demo.mp4`
 - Duration: `00:02:19.39`; frame size: `1280x720`
 - Demo SHA-256: `718DC63F751CB357E7EFB25D42F79DD0369541F4B54013DC0CBDD9891C0804D3`
